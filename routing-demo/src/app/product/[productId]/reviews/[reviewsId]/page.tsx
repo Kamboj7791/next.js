@@ -1,4 +1,4 @@
-import { error } from "console";
+"use client";
 import { notFound } from "next/navigation";
 function getRandomFirst(count: number) {
   return Math.floor(Math.random() * count);
