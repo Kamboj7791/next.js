@@ -1,4 +1,4 @@
-import Card from "@/components/page";
+import Card from "@/components/card";
 
 export default function DefaultRevenue() {
   return <Card>Revenue Metrices</Card>;
