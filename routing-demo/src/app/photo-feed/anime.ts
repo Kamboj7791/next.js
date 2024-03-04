@@ -16,15 +16,15 @@ export type anime = {
 const imgarr: anime[] = [
   {
     id: "1",
-    name: "abc",
+    name: "recarnation of slime",
     src: img1,
     creator: "abc",
   },
-  { id: "2", name: "abc", src: img2, creator: "abc" },
-  { id: "3", src: img3, name: "abc", creator: "abc" },
-  { id: "4", src: img4, name: "abc", creator: "abc" },
-  { id: "5", src: img5, name: "abc", creator: "abc" },
-  { id: "6", src: img6, name: "abc", creator: "abc" },
-  { id: "7", src: img7, name: "abc", creator: "abc" },
+  { id: "2", name: "goblin slayer", src: img2, creator: "abc" },
+  { id: "3", src: img3, name: "jujustu kaisen", creator: "abc" },
+  { id: "4", src: img4, name: "demon slayer", creator: "abc" },
+  { id: "5", src: img5, name: "tokyo ghoul", creator: "abc" },
+  { id: "6", src: img6, name: "solo leveling", creator: "abc" },
+  { id: "7", src: img7, name: "attack on titans", creator: "abc" },
 ];
 export default imgarr;
