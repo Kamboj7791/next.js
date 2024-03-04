@@ -1,11 +1,12 @@
+import "./style.css";
 export default function Layout(props: {
-  children: React.ReactNode;
   modal: React.ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <>
-      {props.children}
       {props.modal}
+      {props.children}
     </>
   );
 }
