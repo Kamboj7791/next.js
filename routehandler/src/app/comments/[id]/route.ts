@@ -1,9 +1,13 @@
 import { Comments } from "../data";
+import { redirect } from "next/navigation";
 
 export async function GET(
   _request: Request,
   { params }: { params: { id: string } }
 ) {
+  if (parseInt(params.id) > Comments.length) {
+    redirect("/comments");
+  }
   const comment = Comments.find(
     (comment) => comment.id === parseInt(params.id)
   );
@@ -23,7 +27,7 @@ export async function PATCH(
 }
 
 export async function DELETE(
-  request: Request,
+  _request: Request,
   { params }: { params: { id: string } }
 ) {
   const index = Comments.findIndex(
