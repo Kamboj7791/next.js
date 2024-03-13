@@ -14,5 +14,6 @@ export default function MiddleWare(request: NextRequest) {
   if (!themePreference) {
     response.cookies.set("theme", "dark");
   }
+  response.headers.set("custom-header", "custom-value");
   return response;
 }
